@@ -1,0 +1,8 @@
+from github.com/myorganization/user-schema@v1.2.3 import user
+
+definition document {
+    relation viewer: user
+    relation editor: user
+    permission view = viewer + edit
+    permission edit = editor
+}

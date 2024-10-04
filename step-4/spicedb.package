@@ -1,0 +1,4 @@
+package github.com/myorganization/schema
+schemaVersion 2
+
+replaces github.com/myorganization/user-schema@v1.2.3 ../my-local-user-schema

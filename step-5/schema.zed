@@ -1,0 +1,11 @@
+from github.com/myorganization/user-schema@v1.2.3 import user
+from .internal-user import user as internal_user
+
+definition document {
+    relation admin: internal_user
+    relation viewer: user
+    relation editor: user
+    permission view = viewer + edit
+    permission edit = editor
+    permission delete = admin
+}
